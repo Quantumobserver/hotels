@@ -10,7 +10,8 @@
       <xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="NearestAirport" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+      <xs:element name="NearestAirport" type="xs:string" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -19,10 +20,9 @@
       <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
       <xs:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
+
       <xs:element name="Rating" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
-    <xs:attribute name="id" type="xs:string" use="required"/>
-    <xs:attribute name="petFriendly" type="xs:boolean" use="optional"/>
   </xs:complexType>
 
   <xs:element name="Hotels">
@@ -32,4 +32,5 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
 </xs:schema>
