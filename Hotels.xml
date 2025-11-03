@@ -4,7 +4,6 @@
   <Hotel id="H001" petFriendly="true">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
-    <Phone>800-937-8461</Phone>
     <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -33,7 +32,6 @@
   <Hotel id="H003" petFriendly="false">
     <Name>Hilton Garden Inn Phoenix/Tempe ASU</Name>
     <Phone>480-555-0103</Phone>
-    <Phone>888-555-0110</Phone>
     <Address>
       <Number>2102</Number>
       <Street>E Rio Salado Pkwy</Street>
@@ -88,7 +86,6 @@
   <Hotel id="H007" petFriendly="false">
     <Name>Moxy Phoenix Tempe/ASU Area</Name>
     <Phone>480-555-0107</Phone>
-    <Phone>877-555-0107</Phone>
     <Address>
       <Number>1333</Number>
       <Street>S Rural Rd</Street>
