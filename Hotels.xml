@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://quantumobserver.github.io/hotels/Hotels.xsd">
-  <Hotel id="H001" petFriendly="true">
+
+  <Hotel>
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
     <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
+      <NearestAirport>Sky Habor</NearestAirport>
     </Address>
     <Rating>4.2</Rating>
   </Hotel>
 
-  <Hotel id="H002">
+  <Hotel>
     <Name>Hyatt Place Tempe</Name>
     <Phone>480-555-0102</Phone>
     <Address>
@@ -29,9 +31,10 @@
     <Rating>4.1</Rating>
   </Hotel>
 
-  <Hotel id="H003" petFriendly="false">
+  <Hotel>
     <Name>Hilton Garden Inn Phoenix/Tempe ASU</Name>
     <Phone>480-555-0103</Phone>
+    <Phone>888-555-0110</Phone>
     <Address>
       <Number>2102</Number>
       <Street>E Rio Salado Pkwy</Street>
@@ -42,7 +45,7 @@
     </Address>
   </Hotel>
 
-  <Hotel id="H004">
+  <Hotel>
     <Name>AC Hotel by Marriott Phoenix Tempe/Downtown</Name>
     <Phone>480-555-0104</Phone>
     <Address>
@@ -56,7 +59,7 @@
     <Rating>4.3</Rating>
   </Hotel>
 
-  <Hotel id="H005" petFriendly="true">
+  <Hotel>
     <Name>Tempe Mission Palms</Name>
     <Phone>480-555-0105</Phone>
     <Address>
@@ -69,7 +72,7 @@
     </Address>
   </Hotel>
 
-  <Hotel id="H006">
+  <Hotel>
     <Name>Graduate Tempe</Name>
     <Phone>480-555-0106</Phone>
     <Address>
@@ -83,9 +86,10 @@
     <Rating>3.9</Rating>
   </Hotel>
 
-  <Hotel id="H007" petFriendly="false">
+  <Hotel>
     <Name>Moxy Phoenix Tempe/ASU Area</Name>
     <Phone>480-555-0107</Phone>
+    <Phone>877-555-0107</Phone>
     <Address>
       <Number>1333</Number>
       <Street>S Rural Rd</Street>
@@ -96,7 +100,7 @@
     </Address>
   </Hotel>
 
-  <Hotel id="H008">
+  <Hotel>
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Phone>480-555-0108</Phone>
     <Address>
@@ -110,7 +114,7 @@
     <Rating>4.0</Rating>
   </Hotel>
 
-  <Hotel id="H009">
+  <Hotel>
     <Name>Residence Inn Tempe Downtown/University</Name>
     <Phone>480-555-0109</Phone>
     <Address>
@@ -123,7 +127,7 @@
     </Address>
   </Hotel>
 
-  <Hotel id="H010" petFriendly="true">
+  <Hotel>
     <Name>Hampton Inn &amp; Suites Tempe/Phoenix Airport</Name>
     <Phone>480-555-0110</Phone>
     <Address>
@@ -137,7 +141,7 @@
     <Rating>4.4</Rating>
   </Hotel>
 
-  <Hotel id="H011">
+  <Hotel>
     <Name>Holiday Inn Express &amp; Suites Tempe</Name>
     <Phone>480-555-0111</Phone>
     <Address>
@@ -149,4 +153,5 @@
       <NearestAirport>Sky Harbor</NearestAirport>
     </Address>
   </Hotel>
+
 </Hotels>
