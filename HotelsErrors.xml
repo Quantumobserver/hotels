@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- (1) Root element error: It should be Hotels, but it was deliberately written as Hotel. -->
+<!-- Intentionally making the root element Hotel (should be Hotels) -->
 <Hotel>
-  <!-- (2) Missing required attribute id (as defined by XSD) -->
-  <Hotel petFriendly="true">
-    <!-- (5) A hotel provided two names (duplicate names). -->
+  <!-- Hotel #1: Duplicate Name (Error 4), the rest are correct -->
+  <Hotel>
     <Name>Westin</Name>
     <Name>Duplicate Name</Name>
     <Phone>480-968-8885</Phone>
@@ -19,9 +18,9 @@
     <Rating>4.2</Rating>
   </Hotel>
 
-  <Hotel id="ERR02">
+  <!-- Hotel #2: Missing Phone (Error 2), everything else is correct -->
+  <Hotel>
     <Name>Hyatt Place Tempe</Name>
-    <!-- (3) One required Phone element is missing (at least one according to the schema). -->
     <Address>
       <Number>601</Number>
       <Street>S Ash Ave</Street>
@@ -33,16 +32,47 @@
     <Rating>4.1</Rating>
   </Hotel>
 
-  <Hotel id="ERR03">
-    <Name>Broken Address Closing</Name>
-    <Phone>480-555-0999</Phone>
-    <!-- (4) The address is missing the close tab. -->
+ <!-- Hotel #3: Address is missing NearestAirport (Error 3) -->
+  <Hotel>
+    <Name>Hilton Garden Inn Phoenix/Tempe ASU</Name>
+    <Phone>480-555-0103</Phone>
+    <Phone>888-555-0110</Phone>
     <Address>
-      <Number>1</Number>
-      <Street>Main St</Street>
+      <Number>2102</Number>
+      <Street>E Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <!-- Intentionally missing <NearestAirport> -->
+    </Address>
+  </Hotel>
+
+  <!-- Hotel #4: Order error (Error 5) — Put Address before Phone -->
+  <Hotel>
+    <Name>AC Hotel by Marriott Phoenix Tempe/Downtown</Name>
+    <Address>
+      <Number>100</Number>
+      <Street>E Rio Salado Pkwy</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
       <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+    <Phone>480-555-0104</Phone>
+    <Rating>4.3</Rating>
+  </Hotel>
+
+  <!-- Hotel #5: Keep it correct (for diversity; the root element is already incorrect)-->
+  <Hotel>
+    <Name>Tempe Mission Palms</Name>
+    <Phone>480-555-0105</Phone>
+    <Address>
+      <Number>60</Number>
+      <Street>E 5th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
   </Hotel>
 </Hotel>
