@@ -23,6 +23,9 @@
               </xs:element>
               <xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
             </xs:sequence>
+
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="petFriendly" type="xs:boolean" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
